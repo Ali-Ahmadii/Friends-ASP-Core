@@ -1,0 +1,16 @@
+﻿@model List<WebApplication1.Models.FriendsViewModel>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Number</th>
+        <th>Image</th>
+    </tr>
+    @foreach (var friend in Model)
+    {
+        <tr>
+            <td>@friend.Name</td>
+            <td>@friend.Phone</td>
+            <td><img src="@friend.Profile" alt="Friend Image" /></td>
+        </tr>
+    }
+</table>
